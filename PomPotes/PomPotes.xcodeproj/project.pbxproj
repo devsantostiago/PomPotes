@@ -11,6 +11,10 @@
 		270A16F427079D0400D31DC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A16F327079D0400D31DC7 /* ContentView.swift */; };
 		270A16F627079D0700D31DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270A16F527079D0700D31DC7 /* Assets.xcassets */; };
 		270A16F927079D0700D31DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270A16F827079D0700D31DC7 /* Preview Assets.xcassets */; };
+		270A170127079D8800D31DC7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170027079D8800D31DC7 /* Recipe.swift */; };
+		270A170327079DB800D31DC7 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170227079DB800D31DC7 /* Ingredient.swift */; };
+		270A170627079E3D00D31DC7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170527079E3D00D31DC7 /* DataService.swift */; };
+		270A170A27079F7600D31DC7 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 270A170927079F7600D31DC7 /* recipes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		270A16F327079D0400D31DC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		270A16F527079D0700D31DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270A16F827079D0700D31DC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		270A170027079D8800D31DC7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		270A170227079DB800D31DC7 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		270A170527079E3D00D31DC7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		270A170927079F7600D31DC7 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 				270A16F127079D0400D31DC7 /* PomPotesApp.swift */,
 				270A16F327079D0400D31DC7 /* ContentView.swift */,
 				270A16F527079D0700D31DC7 /* Assets.xcassets */,
+				270A16FF27079D7000D31DC7 /* Model */,
+				270A170427079E2400D31DC7 /* Services */,
+				270A170827079EEE00D31DC7 /* Data */,
 				270A16F727079D0700D31DC7 /* Preview Content */,
 			);
 			path = PomPotes;
@@ -65,6 +76,31 @@
 				270A16F827079D0700D31DC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		270A16FF27079D7000D31DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				270A170027079D8800D31DC7 /* Recipe.swift */,
+				270A170227079DB800D31DC7 /* Ingredient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		270A170427079E2400D31DC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				270A170527079E3D00D31DC7 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		270A170827079EEE00D31DC7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				270A170927079F7600D31DC7 /* recipes.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				270A16F927079D0700D31DC7 /* Preview Assets.xcassets in Resources */,
+				270A170A27079F7600D31DC7 /* recipes.json in Resources */,
 				270A16F627079D0700D31DC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270A170627079E3D00D31DC7 /* DataService.swift in Sources */,
+				270A170327079DB800D31DC7 /* Ingredient.swift in Sources */,
+				270A170127079D8800D31DC7 /* Recipe.swift in Sources */,
 				270A16F427079D0400D31DC7 /* ContentView.swift in Sources */,
 				270A16F227079D0400D31DC7 /* PomPotesApp.swift in Sources */,
 			);
