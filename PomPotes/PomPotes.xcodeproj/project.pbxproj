@@ -15,6 +15,12 @@
 		270A170327079DB800D31DC7 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170227079DB800D31DC7 /* Ingredient.swift */; };
 		270A170627079E3D00D31DC7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170527079E3D00D31DC7 /* DataService.swift */; };
 		270A170A27079F7600D31DC7 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 270A170927079F7600D31DC7 /* recipes.json */; };
+		27A9014B27148D9300C23F35 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9014A27148D9300C23F35 /* CounterView.swift */; };
+		27A9014D27148F5400C23F35 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9014C27148F5400C23F35 /* CustomButton.swift */; };
+		27A90151271490B100C23F35 /* RecipesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A90150271490B100C23F35 /* RecipesList.swift */; };
+		27A90153271492D800C23F35 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A90152271492D800C23F35 /* RecipeCell.swift */; };
+		27A90155271493F000C23F35 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A90154271493F000C23F35 /* RecipeListViewModel.swift */; };
+		27A901572714951A00C23F35 /* RecipeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A901562714951A00C23F35 /* RecipeCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		270A170227079DB800D31DC7 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		270A170527079E3D00D31DC7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		270A170927079F7600D31DC7 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		27A9014A27148D9300C23F35 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		27A9014C27148F5400C23F35 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		27A90150271490B100C23F35 /* RecipesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesList.swift; sourceTree = "<group>"; };
+		27A90152271492D800C23F35 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		27A90154271493F000C23F35 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		27A901562714951A00C23F35 /* RecipeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				270A16F127079D0400D31DC7 /* PomPotesApp.swift */,
+				27A9014E2714908F00C23F35 /* Counter */,
+				27A9014F2714909C00C23F35 /* Recipe List */,
 				270A16F327079D0400D31DC7 /* ContentView.swift */,
 				270A16F527079D0700D31DC7 /* Assets.xcassets */,
 				270A16FF27079D7000D31DC7 /* Model */,
@@ -101,6 +115,26 @@
 				270A170927079F7600D31DC7 /* recipes.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		27A9014E2714908F00C23F35 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				27A9014A27148D9300C23F35 /* CounterView.swift */,
+				27A9014C27148F5400C23F35 /* CustomButton.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		27A9014F2714909C00C23F35 /* Recipe List */ = {
+			isa = PBXGroup;
+			children = (
+				27A90150271490B100C23F35 /* RecipesList.swift */,
+				27A90152271492D800C23F35 /* RecipeCell.swift */,
+				27A90154271493F000C23F35 /* RecipeListViewModel.swift */,
+				27A901562714951A00C23F35 /* RecipeCellViewModel.swift */,
+			);
+			path = "Recipe List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +211,14 @@
 				270A170627079E3D00D31DC7 /* DataService.swift in Sources */,
 				270A170327079DB800D31DC7 /* Ingredient.swift in Sources */,
 				270A170127079D8800D31DC7 /* Recipe.swift in Sources */,
+				27A90153271492D800C23F35 /* RecipeCell.swift in Sources */,
+				27A90151271490B100C23F35 /* RecipesList.swift in Sources */,
 				270A16F427079D0400D31DC7 /* ContentView.swift in Sources */,
+				27A9014D27148F5400C23F35 /* CustomButton.swift in Sources */,
+				27A901572714951A00C23F35 /* RecipeCellViewModel.swift in Sources */,
 				270A16F227079D0400D31DC7 /* PomPotesApp.swift in Sources */,
+				27A90155271493F000C23F35 /* RecipeListViewModel.swift in Sources */,
+				27A9014B27148D9300C23F35 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,7 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

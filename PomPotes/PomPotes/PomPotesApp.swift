@@ -11,7 +11,7 @@ import SwiftUI
 struct PomPotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipesList()
         }
     }
 }
