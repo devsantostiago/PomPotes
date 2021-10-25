@@ -15,6 +15,8 @@
 		270A170327079DB800D31DC7 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170227079DB800D31DC7 /* Ingredient.swift */; };
 		270A170627079E3D00D31DC7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A170527079E3D00D31DC7 /* DataService.swift */; };
 		270A170A27079F7600D31DC7 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 270A170927079F7600D31DC7 /* recipes.json */; };
+		273C4DCB2726FFFB00DF66A7 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C4DCA2726FFFB00DF66A7 /* RecipeDetailView.swift */; };
+		273C4DCD2727000900DF66A7 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C4DCC2727000900DF66A7 /* RecipeDetailViewController.swift */; };
 		27A9014B27148D9300C23F35 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9014A27148D9300C23F35 /* CounterView.swift */; };
 		27A9014D27148F5400C23F35 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9014C27148F5400C23F35 /* CustomButton.swift */; };
 		27A90151271490B100C23F35 /* RecipesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A90150271490B100C23F35 /* RecipesList.swift */; };
@@ -33,6 +35,8 @@
 		270A170227079DB800D31DC7 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		270A170527079E3D00D31DC7 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		270A170927079F7600D31DC7 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		273C4DCA2726FFFB00DF66A7 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		273C4DCC2727000900DF66A7 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		27A9014A27148D9300C23F35 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		27A9014C27148F5400C23F35 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		27A90150271490B100C23F35 /* RecipesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesList.swift; sourceTree = "<group>"; };
@@ -72,9 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				270A16F127079D0400D31DC7 /* PomPotesApp.swift */,
+				270A16F327079D0400D31DC7 /* ContentView.swift */,
 				27A9014E2714908F00C23F35 /* Counter */,
 				27A9014F2714909C00C23F35 /* Recipe List */,
-				270A16F327079D0400D31DC7 /* ContentView.swift */,
+				273C4DC92726FFEA00DF66A7 /* Recipe Detail */,
 				270A16F527079D0700D31DC7 /* Assets.xcassets */,
 				270A16FF27079D7000D31DC7 /* Model */,
 				270A170427079E2400D31DC7 /* Services */,
@@ -115,6 +120,15 @@
 				270A170927079F7600D31DC7 /* recipes.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		273C4DC92726FFEA00DF66A7 /* Recipe Detail */ = {
+			isa = PBXGroup;
+			children = (
+				273C4DCA2726FFFB00DF66A7 /* RecipeDetailView.swift */,
+				273C4DCC2727000900DF66A7 /* RecipeDetailViewController.swift */,
+			);
+			path = "Recipe Detail";
 			sourceTree = "<group>";
 		};
 		27A9014E2714908F00C23F35 /* Counter */ = {
@@ -215,6 +229,8 @@
 				27A90151271490B100C23F35 /* RecipesList.swift in Sources */,
 				270A16F427079D0400D31DC7 /* ContentView.swift in Sources */,
 				27A9014D27148F5400C23F35 /* CustomButton.swift in Sources */,
+				273C4DCD2727000900DF66A7 /* RecipeDetailViewController.swift in Sources */,
+				273C4DCB2726FFFB00DF66A7 /* RecipeDetailView.swift in Sources */,
 				27A901572714951A00C23F35 /* RecipeCellViewModel.swift in Sources */,
 				270A16F227079D0400D31DC7 /* PomPotesApp.swift in Sources */,
 				27A90155271493F000C23F35 /* RecipeListViewModel.swift in Sources */,

@@ -3,30 +3,41 @@
 //  PomPotes
 //
 //  Created by Tiago Santos on 11/10/2021.
-//
+//•
 
 import SwiftUI
 
 struct RecipesList: View {
     
     @ObservedObject var model = RecipeListViewModel()
+    @State var navigationTitle = "No Recepies"
     
     var body: some View {
-        VStack {
-            VStack(alignment: .leading) {
-                Text("Recipes")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.leading, 20)
-                
-                List(model.cellsViewModels) { model in
-                    RecipeCell(imageName: model.imageName, name: model.name)
+        NavigationView {
+            VStack {
+                List(model.cellsViewModels) { cellModel in
+                    NavigationLink {
+                        RecipeDetailView(model: RecipeDetailViewModel(recipe: model.getRecipe(with: cellModel.id)))
+                    } label: {
+                        RecipeCell(imageName: cellModel.imageName, name: cellModel.name)
+                    }
                 }.listStyle(.plain)
+                    
+                
+                CustomButton(description: "Get Recipes", color: .blue) {
+                    model.didTappedGetRecipesButton()
+                    navigationTitle = "Recipes"
+                }
             }
-            
-            CustomButton(description: "Get Recipes", color: .blue) {
-                model.didTappedGetRecipesButton()
-            }
+                .navigationTitle(navigationTitle)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button("Press Me") {
+                            print("Pressed")
+                        }
+                    }
+                }
         }
     }
 }
